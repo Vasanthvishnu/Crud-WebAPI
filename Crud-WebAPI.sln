@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34114.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud-WebAPI", "Crud-WebAPI\Crud-WebAPI.csproj", "{BE9DB944-6722-4E5A-9E71-F609B8481BCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crud-WebAPI", "Crud-WebAPI\Crud-WebAPI.csproj", "{BE9DB944-6722-4E5A-9E71-F609B8481BCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{2399641D-5CDA-4084-ACE0-87381F437E8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE9DB944-6722-4E5A-9E71-F609B8481BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE9DB944-6722-4E5A-9E71-F609B8481BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE9DB944-6722-4E5A-9E71-F609B8481BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2399641D-5CDA-4084-ACE0-87381F437E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2399641D-5CDA-4084-ACE0-87381F437E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2399641D-5CDA-4084-ACE0-87381F437E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2399641D-5CDA-4084-ACE0-87381F437E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
