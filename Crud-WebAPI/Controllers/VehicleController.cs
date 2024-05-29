@@ -23,10 +23,10 @@ namespace Crud_WebAPI.Controllers
         }
 
         // GET api/<VehicleController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("GetbyId")]
+        public IEnumerable<VehicleModel> Get(int id)
         {
-            return "value";
+            return vech.getbyid(id);
         }
 
         // POST api/<VehicleController>

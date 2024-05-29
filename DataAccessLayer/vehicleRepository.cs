@@ -62,7 +62,7 @@ namespace DataAccessLayer
             IEnumerable<VehicleModel> result;
             try
             {
-                var query = ($"exec ShowAll");
+                var query = ($"exec  ShowAll");
                 DAL.Open();
                 result = DAL.Query<VehicleModel>(query);
 
@@ -93,6 +93,29 @@ namespace DataAccessLayer
             {
                 throw;
             }
+        }
+        public IEnumerable<VehicleModel> getbyid(int id)
+        {
+            IEnumerable<VehicleModel> result;
+            try
+            {
+                var view = ($"select *from Vehicle where Id={id}");
+                DAL.Open();
+                var name = DAL.Query<VehicleModel>(view);
+                DAL.Close();
+                return name;
+               
+
+            }
+            catch
+            {
+                throw;
+            }
+            finally
+            {
+                DAL.Close();
+            }
+            return result;
         }
     }
     
